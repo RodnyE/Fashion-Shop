@@ -1,0 +1,15 @@
+{
+  "name": "fashion-store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eruda": "^3.0.0"
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fashion Store | Home </title>
+    
+    <link href="/assets/font/Aretha Bridge.ttf" as="font" type="font/ttf" crossorigin>
+    <link href="/assets/font/Helvetica.otf" as="font" type="font/otf" crossorigin>
+    <link href="/assets/font/Protest-1.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="/assets/font/Protest-2.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <link rel="stylesheet" href="/ui/hamb-icon.css">
+    <link rel="stylesheet" href="/ui/navbar.css">
+    <link rel="stylesheet" href="/ui/drawer.css">
+    <link rel="stylesheet" href="/ui/hero-img.css">
+    <link rel="stylesheet" href="/ui/carrousel.css">
+    
+    
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/home.css">
+    
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    
+    
+    <script src="/node_modules/eruda/eruda.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/index.js"></script>
+</head>
+
+<body>
+    
+    <!-- navigation -->
+    <div class="flex flex-column">
+        
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="navbar__left mobile">
+                <div class="hamb-icon">
+                    <span></span>
+                    <span></span>
+                    <span class="bg-orange"></span>
+                </div>
+            </div>
+            
+            <div class="navbar__center">
+                <div class="navbar__brand">
+                    Fashion
+                    <span class="c-orange">S</span>hop
+                </div>
+            </div>
+            
+            <div class="navbar__right desktop">
+                <div> Home </div>
+                <div> </div>
+                <div> Masculino </div>
+            </div>
+        </nav>
+        
+        
+        <!-- drawer -->
+        <div class="drawer mobile">
+            <ul>
+                <li> Inicio </li>
+                <li> Tienda </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- hero -->
+    <div class="hero" style="
+        --img-1: url('/assets/img/model/women-1.jpg');
+        --img-2: url('/assets/img/model/man-1.jpg');
+        --img-3: url('/assets/img/model/women-2.jpg');
+        --img-4: url('/assets/img/model/women-3.jpg');
+    ">
+        <p class="hero__header">
+            Ropa de Lujo
+        </p>
+        <p class="hero__content">
+            sunt dolore adipisicing incididunt deserunt sunt cillum minim consectetur irure
+        </p>
+    </div>
+    
+    
+</body>
+
+</html>

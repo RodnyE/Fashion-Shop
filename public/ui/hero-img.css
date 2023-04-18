@@ -1,0 +1,86 @@
+
+/**
+ * Hero Img
+ */
+.hero {
+    --img-1: 0;
+    --img-2: var(--img-1);
+    --img-3: var(--img-2);
+    --img-4: var(--img-3);
+    
+    font-family: Protest-2;
+    text-align: center;
+    text-shadow: 0 0 1em var(--body-bg);
+    
+    height: 500px;
+    padding: 0 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: var(--img-1);
+    background-size: 100% auto;
+    background-position: 0 0;
+    
+    animation:
+        scale-bg 20s ease-in-out infinite alternate-reverse both,
+        change-hero 70s ease-in infinite both
+    ;
+}
+
+@media (min-width: 500px) {
+    .hero {
+        min-width: 500px;
+        max-width: 500px;
+    }
+}
+
+
+@keyframes scale-bg {
+    from {
+        background-position: 0 0;
+        background-size: 100% auto;
+    }
+    to {
+        background-position: 50%;
+        background-size: 120% auto;
+    }
+}
+
+
+@keyframes change-hero {
+    0%, 20% {background-image: var(--img-1)}
+    25%, 45% {background-image: var(--img-2)}
+    50%, 70% {background-image: var(--img-3)}
+    75% {background-image: var(--img-4)}
+}
+
+.hero__header {
+    font-size: 2em;
+}
+.hero__content {
+    font-size: 1em;
+}
+
+
+
+/** hero content animation **/
+.hero__header,
+.hero__content {
+    padding: 0;
+    margin: 0;
+    color: var(--body-color);
+    text-shadow: .2em .2em .5em white;
+    
+    position: relative;
+    top: .5em;
+    opacity: 0;
+    transition: .7s ease-out;
+}
+.hero.open > .hero__header,
+.hero.open > .hero__content {
+    top: 0;
+    opacity: 1;
+}

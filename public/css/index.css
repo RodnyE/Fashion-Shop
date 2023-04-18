@@ -1,0 +1,49 @@
+/**
+ * main styles
+ */
+
+html, 
+body {
+    padding: 0;
+    margin: 0;
+}
+html {
+    background: url("/assets/bg.png");
+    font-family: Protest-1, Helvetica, Sans-Serif;
+    color: var(--body-color);
+}
+
+
+/** mobile **/
+@media (max-width: 768px) {
+    .desktop {display: none !important}
+}
+
+/** desktop **/
+@media (min-width: 768px) {
+    .mobile {display: none !important}
+}
+
+
+
+
+/**
+ * Fonts 
+ */
+@font-face {
+    /** logo font **/
+    font-family: Aretha;
+    src: url("/assets/font/Aretha Bridge.ttf");
+}
+
+@font-face {
+    /** body font **/
+    font-family: Protest-1;
+    src: url("/assets/font/Protest-1.woff2");
+}
+
+@font-face {
+    /** body font **/
+    font-family: Protest-2;
+    src: url("/assets/font/Protest-2.woff2");
+}

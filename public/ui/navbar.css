@@ -1,0 +1,29 @@
+/**
+ * Navigation Bar UI Component
+ */
+
+.navbar {
+    padding: 1rem 1rem;
+    position: relative;
+    color: var(--primary-color);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+    z-index: 2;
+}
+
+.navbar__left,
+.navbar__center,
+.navbar__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar__center {
+    flex-grow: 1;
+}

@@ -1,0 +1,32 @@
+
+/**
+ * Home Navbar
+ */
+.navbar__center {
+    justify-content: flex-end;
+}
+.navbar__brand {
+    font-family: Aretha;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+
+/** 
+ * Home Drawer 
+ */
+.drawer {
+    color: var(--primary-color);
+    background: var(--body-bg);
+}
+
+
+/**
+ * Media Query 
+ */
+@media (min-width: 768px) {
+    .navbar__center {
+        justify-content: flex-start;
+    }
+}
+
