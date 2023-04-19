@@ -1,7 +1,13 @@
 
 /**
- * Home Navbar
+ * Header 
  */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/** Home Navbar **/
 .navbar__center {
     justify-content: flex-end;
 }

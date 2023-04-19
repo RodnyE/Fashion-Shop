@@ -1,10 +1,31 @@
+@media (min-width: 768px) {
+    .cursor-pointer {
+        transition: transform .2s;
+    }
+    
+    .cursor-pointer:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
 
 .flex {
     display: flex;
 }
-.flex-column {flex-direction: column}
-.flex-row {flex-direction: row}
+
+.flex-column {
+    flex-direction: column
+}
+
+.flex-row {
+    flex-direction: row
+}
 
 
-.c-orange {color: var(--orange) !important}
-.bg-orange {background: var(--orange) !important}
+.c-orange {
+    color: var(--orange) !important
+}
+
+.bg-orange {
+    background: var(--orange) !important
+}

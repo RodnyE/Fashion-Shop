@@ -3,14 +3,17 @@
  * Hero Img
  */
 .hero {
-    --img-1: 0;
-    --img-2: var(--img-1);
-    --img-3: var(--img-2);
-    --img-4: var(--img-3);
+    --img-1: url('/assets/img/model/women-1.jpg');
+    --img-2: url('/assets/img/model/man-1.jpg');
+    --img-3: url('/assets/img/model/women-2.jpg');
+    --img-4: url('/assets/img/model/women-3.jpg');
+    --img-5: url('/assets/img/model/women-4.jpg');
     
     font-family: Protest-2;
     text-align: center;
-    text-shadow: 0 0 1em var(--body-bg);
+    
+    color: var(--body-bg);
+    text-shadow: 1px 1px 2px black;
     
     height: 500px;
     padding: 0 1rem;
@@ -23,17 +26,17 @@
     background-image: var(--img-1);
     background-size: 100% auto;
     background-position: 0 0;
+    background-repeat: no-repeat;
     
     animation:
-        scale-bg 20s ease-in-out infinite alternate-reverse both,
+        scale-bg 10s ease-in-out infinite alternate-reverse both,
         change-hero 70s ease-in infinite both
     ;
 }
 
 @media (min-width: 500px) {
     .hero {
-        min-width: 500px;
-        max-width: 500px;
+        
     }
 }
 
@@ -51,13 +54,18 @@
 
 
 @keyframes change-hero {
-    0%, 20% {background-image: var(--img-1)}
-    25%, 45% {background-image: var(--img-2)}
-    50%, 70% {background-image: var(--img-3)}
-    75% {background-image: var(--img-4)}
+    0%, 15% {background-image: var(--img-1)}
+    20%, 35% {background-image: var(--img-2)}
+    40%, 55% {background-image: var(--img-3)}
+    60%, 75% {background-image: var(--img-4)}
+    80%, 95% {background-image: var(--img-5)}
+    100% {background-image: var(--img-1)}
 }
 
 .hero__header {
+    font-family: Aretha;
+    font-weight: bold;
+    font-style: italic;
     font-size: 2em;
 }
 .hero__content {
@@ -71,8 +79,6 @@
 .hero__content {
     padding: 0;
     margin: 0;
-    color: var(--body-color);
-    text-shadow: .2em .2em .5em white;
     
     position: relative;
     top: .5em;

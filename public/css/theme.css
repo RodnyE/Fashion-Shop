@@ -3,6 +3,7 @@
 :root {
     /** basic colors **/
     --orange: #ffa134;
+    --gray: #aaaaaa;
     
     /** app theme **/
     --primary-bg: #cecece;

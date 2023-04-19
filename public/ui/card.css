@@ -1,0 +1,28 @@
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: .5em;
+    
+    color: var(--body-color);
+    background: var(--body-bg);
+    font-family: Protest-1;
+    
+    border-radius: 5px;
+    box-shadow: .2em .2em .5em var(--gray);
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+}
+
+.card__footer {
+    display: flex;
+    
+    width: 100%;
+    padding: .1em 0;
+}
